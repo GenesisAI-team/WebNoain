@@ -71,15 +71,25 @@ export const Navbar: React.FC = () => {
           <Link
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex items-center gap-2 cursor-pointer group z-50"
+            className="flex items-center gap-0 cursor-pointer group z-50"
           >
-            <div className="flex flex-col leading-none">
-              <span className="font-black text-xl tracking-tighter text-white group-hover:text-[#FF6B95] transition-colors">
+            <img
+              src="/LogoSinFondo.png"
+              alt="Logo CV Noáin"
+              /* CAMBIOS: 
+                 1. h-16 (64px) en móvil y md:h-20 (80px) en escritorio.
+                 2. -mr-3 para compensar el aumento de tamaño y pegarlo más al texto.
+              */
+              className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-lg -mr-3"
+            />
+
+            <div className="flex flex-col leading-none hidden sm:flex pl-1">
+              {/* Mantengo el texto en text-2xl pero lo ajusto para que se vea potente al lado del logo grande */}
+              <span className="font-black text-xl md:text-2xl tracking-tighter text-white group-hover:text-[#FF6B95] transition-colors uppercase">
                 CV NOÁIN
               </span>
             </div>
           </Link>
-
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-10">
             {navLinks.map((link) => (

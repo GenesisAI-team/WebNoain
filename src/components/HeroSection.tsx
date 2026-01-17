@@ -30,14 +30,14 @@ export const HeroSection: React.FC = () => {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF6B95]"></span>
           </span>
           <span className="text-[10px] font-bold tracking-widest uppercase text-white">
-            Temporada 2024/25
+            Temporada 2026/27
           </span>
         </div>
 
         {/* Título - Bajamos de 9xl a 5xl/6xl en móvil para que sea UNIVERSAL */}
         <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tighter leading-[0.9] mb-6 uppercase drop-shadow-2xl">
-          SOY EL <br className="md:hidden" />
-          <span className="text-[#FF6B95]">MEJOR</span>
+          C.V. <br className="md:hidden" />
+          <span className="text-[#FF6B95]">NOÁIN</span>
         </h1>
 
         {/* Subtítulo - Más compacto */}

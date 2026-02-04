@@ -8,7 +8,7 @@ import {
   AvisoLegal,
   PoliticaPrivacidad,
   PoliticaCookies,
-} from "./pages/legalPages";
+} from "./pages/LegalPages";
 
 const App: React.FC = () => {
   return (

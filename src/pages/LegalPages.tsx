@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { ShieldCheck, FileText, Cookie, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+// IMPORTANTE: Usamos nuestro componente manual, NO la librería externa
+import { SEO } from "../components/SEO";
 
 // Componente Layout para textos legales (Diseño mejorado)
 const LegalLayout: React.FC<{
@@ -60,6 +62,12 @@ const LegalLayout: React.FC<{
 // 1. AVISO LEGAL
 export const AvisoLegal: React.FC = () => (
   <LegalLayout title="Aviso Legal" icon={<ShieldCheck className="w-8 h-8" />}>
+    {/* SEO MANUAL */}
+    <SEO
+      title="Aviso Legal"
+      description="Información legal, titularidad y condiciones de uso del sitio web del Club Voleibol Noáin."
+    />
+
     <p>
       En cumplimiento del deber de información recogido en artículo 10 de la Ley
       34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y
@@ -124,6 +132,12 @@ export const AvisoLegal: React.FC = () => (
 // 2. POLÍTICA DE PRIVACIDAD
 export const PoliticaPrivacidad: React.FC = () => (
   <LegalLayout title="Privacidad" icon={<FileText className="w-8 h-8" />}>
+    {/* SEO MANUAL */}
+    <SEO
+      title="Política de Privacidad"
+      description="Cómo tratamos tus datos personales en el Club Voleibol Noáin. Transparencia y seguridad."
+    />
+
     <p>
       En el CLUB VOLEIBOL NOÁIN estamos comprometidos con la protección de la
       privacidad y el uso correcto de los datos personales. Tratamos la
@@ -174,6 +188,12 @@ export const PoliticaPrivacidad: React.FC = () => (
 // 3. POLÍTICA DE COOKIES
 export const PoliticaCookies: React.FC = () => (
   <LegalLayout title="Cookies" icon={<Cookie className="w-8 h-8" />}>
+    {/* SEO MANUAL */}
+    <SEO
+      title="Política de Cookies"
+      description="Información sobre el uso de cookies en la web de CV Noáin."
+    />
+
     <p>
       Este sitio web puede utilizar cookies propias y de terceros para mejorar
       la experiencia de usuario y obtener datos estadísticos de navegación.

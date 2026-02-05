@@ -48,7 +48,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: "Actualidad", id: "actualidad" },
-    { name: "Equipos", id: "equipos" },
+    /*{ name: "Equipos", id: "equipos" },*/
     { name: "Inscripciones", id: "inscripciones" },
     { name: "Contacto", id: "contacto" },
   ];
